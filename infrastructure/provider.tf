@@ -14,10 +14,16 @@ terraform {
     }
   }
   required_version = ">= 1.9.0"
+
+  cloud {
+    organization = "AE_NV"
+    workspaces {
+      tags = [ "steven" ]
+    }
+  }
 }
 
 # Configure the Azure provider
 provider "azurerm" {
   features {}
 }
-
