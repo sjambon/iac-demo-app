@@ -11,7 +11,7 @@ resource "azurerm_resource_group" "storage-group" {
 }
 
 resource "azurerm_storage_account" "storage-account" {
-  name                     = "sjambon_storage_account_name"
+  name                     = "saniac"
   resource_group_name      = azurerm_resource_group.storage-group.name
   location                 = azurerm_resource_group.storage-group.location
   account_tier             = "Standard"
